@@ -1,0 +1,21 @@
+public class Calculator{
+
+    public static void main(String[] args) {
+        
+    System.out.println(Calculator.powerDouble(77.6, 8));
+    System.out.println(Calculator.powerInt(66,4));
+    }
+
+}
+
+class Calculator
+{
+    static double powerInt(int a1,int a2)
+    {
+         return Math.pow(a1,a2);
+    }
+static double powerDouble(double a1,int a2)
+{
+    return Math.pow(a1,a2);
+}
+}
