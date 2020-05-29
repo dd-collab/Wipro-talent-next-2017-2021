@@ -1,0 +1,33 @@
+{
+    
+    
+    int[] a=new int[arr.size()]; 
+    int n= arr.size(); 
+    boolean f;
+    for (int i =0; i < n; i++) 
+            a[i] = arr.get(i); 
+    
+
+    for(int i=0;i<n;i++)
+       {
+           if(a[i]==0)
+             a[i]=0;
+           else
+           {
+               f=(int)(Math.ceil((Math.log(a[i]) / Math.log(2)))) ==  
+                     (int)(Math.floor(((Math.log(a[i]) / Math.log(2))))); 
+               if(f==true) 
+                 a[i]=1;
+               else
+                  a[i]=0;       
+           }  
+       }
+      
+          List<Integer> Lists = new ArrayList<Integer>();
+          for(int i=0;i<n;i++)
+            Lists.add(a[i]);
+          return Lists;
+
+        }
+        
+    }
