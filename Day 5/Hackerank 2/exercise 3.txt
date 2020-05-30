@@ -1,0 +1,44 @@
+class Result {
+     static void sort( String []arr,int num) 
+   { 
+       
+    for(int i = 0;i < num;i++) 
+    { 
+        for(int j = i + 1;j < num;j++) 
+        { 
+              
+           if((arr[i] + arr[j]).compareTo(arr[j] + arr[i]) > 0) 
+            { 
+                String s = arr[i]; 
+                arr[i] = arr[j]; 
+                arr[j] = s; 
+            } 
+        } 
+    }
+    
+   }
+
+    /*
+     * Complete the 'smallestString' function below.
+     *
+     * The function is expected to return a STRING.
+     * The function accepts STRING_ARRAY substrings as parameter.
+     */
+
+    public static String smallestString(List<String> substrings) {
+         int  num=substrings.size();
+        String[] a=new String[substrings.size()];
+        for (int i =0; i < n; i++) 
+            arr[i] = substrings.get(i); 
+
+      sort(arr,num); 
+   
+    String answer = ""; 
+    for (int i = 0; i < n; i++) 
+        answer += arr[i]; 
+  
+    return answer;
+
+    }
+
+}

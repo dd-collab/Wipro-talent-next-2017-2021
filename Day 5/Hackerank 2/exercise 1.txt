@@ -1,0 +1,55 @@
+class Result {
+
+    static char viewed = 'x';
+
+     public static boolean isValid(int i, int j, char[][] paint, char checkChar) {
+        int rows = painting.length;
+        int cols = painting[0].length;
+
+        if (i < 0 || j < 0 || i >= rows || j >= cols || paint[i][j] != checkChar) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+     public static void dfs(char[][] paint, int r, int c, char checkChar) {
+        paint[r][c] = viewed;
+
+        
+
+        int[] ith = {0, 1, -1, 0};
+        int[] jth = {1, 0, 0, -1};
+        for (int k = 0; k < ith.length; k++) {
+            if (isValid(r + ith[k], c + jth[k], paint, checkChar)) {
+                dfs(paint, r + ith[k], c + jth[k], checkChar);
+            }
+        }
+    }
+    public static int strokesRequired(List<String> picture) {
+        int rows=picture.size();
+        int cols=picture.get(0).length();
+        char[][] paint=new char[rows][cols]; 
+
+        for(int d=0;d<rows;d++)
+        {
+            for(int b=0;b<cols;b++)
+            {
+                paint[d][b]=picture.get(d).charAt(b);
+            }
+        }
+       
+        int numberOfComponents = 0;
+        for (int r = 0; r < rows; r++) {
+            for (int c = 0; c < cols; c++) {
+                if (paint[r][c] != viewed) {
+                    numberOfComponents++;
+                    dfs(paint, r, c, paint[r][c]);
+                }
+            }
+        }
+
+        return numberOfComponents;
+
+    }
+
+}

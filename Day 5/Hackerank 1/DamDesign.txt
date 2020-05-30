@@ -1,0 +1,34 @@
+ public static int maxHeight(List<Integer> wallPositions, List<Integer> wallHeights) {
+    int n = wallPositions.size();
+        int m = wallHeights.size();
+        int[] a=new int[wallPositions.size()];
+        int[] b=new int[wallHeights.size()];
+        for (int i =0; i < wallPositions.size(); i++) 
+            a[i] = wallPositions.get(i); 
+        for (int i =0; i < wallHeights.size(); i++) 
+            b[i] = wallHeights.get(i);     
+        
+    
+        int max = 0;
+
+        for (int i=0; i<n-1; i++) {
+            if (a[i]<a[i+1]-1) {
+                // We have a gap
+                int heightDiff =  Math.abs(b[i+1] - b[i]);
+                int gapLen = a[i+1] - a[i] - 1;
+                int localMax = 0;
+                if (gapLen > heightDiff) {
+                    int low = Math.max(b[i+1], b[i]) + 1;
+                    int remainingGap = gapLen - heightDiff - 1;
+                    localMax = low + remainingGap/2;
+
+                } else {
+                    localMax = Math.min(b[i+1], b[i]) + gapLen;
+                }
+
+                max = Math.max(max, localMax);
+            }
+        }
+         return max;
+
+    }
