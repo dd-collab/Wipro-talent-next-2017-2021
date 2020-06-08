@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*
-Class UserMainCode
+Class PalindormePossible
 {
 public int Palindrome(int input1)
 {
