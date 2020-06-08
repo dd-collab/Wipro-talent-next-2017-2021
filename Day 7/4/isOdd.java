@@ -1,6 +1,6 @@
 import java.io.*;
 import  java.util.*;
-Class UserMainCode
+Class isOdd
 {
 	public int isOdd(int input1)
 	{
