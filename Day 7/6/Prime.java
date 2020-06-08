@@ -1,6 +1,6 @@
 import java.io.*;
 import  java.util.*;
-Class UserMainCode
+Class Prime
 {
 	public int isPrime(int input1)
 	{
