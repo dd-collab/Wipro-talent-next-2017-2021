@@ -1,6 +1,6 @@
 import java.io.*;
 import  java.util.*;
-Class UserMainCode
+Class CountPrime
 {
 	public int countPrime(int input1,int input2)
 	{
