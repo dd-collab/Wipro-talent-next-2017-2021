@@ -1,6 +1,6 @@
 import java.io.*;
 import  java.util.*;
-Class UserMainCode
+Class Fibo
 {
 	public int Fibo(int input1)
 	{
