@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-Class UserMainCOde
+Class uniqueCount
 {
 	public int uniqueCount(int input1)
 	{
