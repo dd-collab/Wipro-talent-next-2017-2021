@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-Class UserMainCode
+Class CountEvenOdd
 {
 	public int countEvens(int input1,int input2,int input3,int input4,int input5,Char* input6)
 	{
