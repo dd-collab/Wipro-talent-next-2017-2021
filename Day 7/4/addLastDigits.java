@@ -2,7 +2,7 @@ import java.io.*;
 import  java.util.*;
 
 
-class UserMainCode
+class addLastDigits
 {
 
     public int addLastDigits(int input1,int input2){
