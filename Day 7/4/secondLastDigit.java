@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-Class UserMainCode
+Class secondLastDigit
 {
 	public int secondLastDigit(int input1)
 	{
