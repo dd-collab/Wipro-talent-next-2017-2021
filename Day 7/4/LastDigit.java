@@ -1,6 +1,6 @@
 import java.io.*;
 import  java.util.*;
-Class UserMainCode
+Class LastDigit
 {
 	public int lastDigitOf(int input1)
 	{
