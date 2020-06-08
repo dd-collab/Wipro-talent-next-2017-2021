@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-Class UserMainCode
+Class IsMultiple
 [
 	public int isMultiple(int input1,int input2)
 	{
