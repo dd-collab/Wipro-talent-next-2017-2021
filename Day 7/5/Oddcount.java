@@ -1,8 +1,8 @@
 import java.io.*;
 import java.util.*;
-Class UserMainCode
+Class OddCount
 {
-	public int countEvens(int input1,int input2,int input3,int input4,int input5)
+	public int countOdd(int input1,int input2,int input3,int input4,int input5)
 	{
 		int arr[]={input1,input2,input3,input4,input5};
 		int odd=0;
