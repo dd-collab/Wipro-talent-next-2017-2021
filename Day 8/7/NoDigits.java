@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-Class UserMainCode
+Class NoDigits
 {
 	public int NoDigits(int input1)
 	{
