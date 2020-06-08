@@ -1,6 +1,6 @@
 import java.io.*;
 import  java.util.*;
-Class UserMainCode
+Class Factorial
 {
 	public int Factorial(int input1)
 	{
