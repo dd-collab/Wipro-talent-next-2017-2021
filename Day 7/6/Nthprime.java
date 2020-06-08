@@ -1,8 +1,8 @@
 import java.io.*;
 import  java.util.*;
-Class UserMainCode
+Class Nthprime
 {
-	public int isPrime(int input1)
+	public int Nthprime(int input1)
 	{
 		int num, count, i;
     num=1;
