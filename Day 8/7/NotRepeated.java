@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-Class UserMianCode
+Class NotRepeated
 {
 	public int NoRepeated(int input1)
 	{
